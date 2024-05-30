@@ -1,0 +1,5 @@
+EmailClassifier/model-params/
+EmailClassifier/escalation-params/
+EmailClassifier/priority-params/
+EmailClassifier/classification-params/
+EmailClassifier/venv/
