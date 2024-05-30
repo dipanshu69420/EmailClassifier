@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007acc;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .email-body {
+            white-space: pre-wrap;
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{ email_details.subject }}</h2>
+        <p><strong>From:</strong> {{ email_details.from }}</p>
+        <p><strong>To:</strong> {{ email_details.to }}</p>
+        <p><strong>Subject:</strong> {{ email_details.subject }}</p>
+        <p><strong>Body:</strong></p>
+        <div class="email-body">{{ email_details.decoded_mail|safe}}</div>
+    </div>
+</body>
+</html>
