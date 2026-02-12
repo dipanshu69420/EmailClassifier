@@ -1,0 +1,22 @@
+labels = [
+    "Sales, Interested",
+    "Sales,Not Interested",
+    "Sales, Price negotiation",
+    "Sales, Termination",
+    "HR, Leaves",
+    "HR, Recruitment",
+    "HR, Appraisal",
+    "Development, Modification",
+    "Development, Review"
+]
+
+Priority labels = [
+   "High Priority"
+   "Low Priority"
+   "Medium Priority"
+]
+
+Escalation lables=[
+	"Escalation"
+	"Non Escalation"
+]
